@@ -19,10 +19,11 @@
   </style>
 </head>
 
-<body class="pt-3 px-5 pb-4 lg:pt-14 lg:px-32 lg:pb-24 font-manrope">
+<body
+  class="pt-3 px-5 pb-4 lg:pt-14 lg:px-32 lg:pb-24 font-manrope flex flex-col justify-between gap-16 lg:gap-24 text-[#131318]">
   <header class="flex flex-col justify-center gap-4 relative">
     <!-- <nav class="flex justify-between items-center">
-      <h2 class="text-4xl text-[#131318] font-extrabold">Swift<span class="text-[#FF4240]">Hockey</span></h2>
+      <h2 class="text-4xl font-extrabold">Swift<span class="text-[#FF4240]">Hockey</span></h2>
       <div class="dropdown dropdown-end ml-auto">
         <div tabindex="0" role="button" class="sm:btn sm:m-1 lg:hidden">Click</div>
         <ul tabindex="0"
@@ -40,41 +41,86 @@
     <div class="carousel w-full lg:mt-14 rounded-2xl">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="Images/image1.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
+        <div
+          class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
           <a href="#slide3" class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
           <a href="#slide2" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
         </div>
       </div>
       <div id="slide2" class="carousel-item relative w-full">
         <img src="Images/image2.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
+        <div
+          class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
           <a href="#slide1" class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
           <a href="#slide3" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
         </div>
       </div>
       <div id="slide3" class="carousel-item relative w-full">
         <img src="Images/image3.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
+        <div
+          class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
           <a href="#slide2" class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
           <a href="#slide1" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
         </div>
       </div>
     </div>
-    <div class="bg-[#131318] text-white rounded-2xl lg:p-8 p-4 flex flex-col gap-4 lg:w-max lg:absolute lg:right-8 lg:bottom-8">
+    <div
+      class="bg-[#131318] text-white rounded-2xl lg:p-8 p-4 flex flex-col gap-4 lg:w-max lg:absolute lg:right-8 lg:bottom-8">
       <h1 class="text-lg lg:text-2xl font-extrabold">Meet All the heroes from the field</h1>
-      <p class="text-sm lg:text-base font-medium lg:max-w-[500px] text-[#ffffff99]">Discover the formidable players, skilled tacticians, and passionate athletes
-        who redefine excellence on the hockey field. Unleash the hockey spirit!</p>
+      <p class="text-sm lg:text-base font-medium lg:max-w-[500px] text-[#ffffff99]">Discover the formidable players,
+        skilled tacticians, and passionate athletes who redefine excellence on the hockey field. Unleash the hockey
+        spirit!</p>
     </div>
   </header>
+
+  <section class="progress-container flex flex-col items-center gap-7">
+    <h2 class="text-center text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+    <p class="text-center text-sm lg:text-base text-[#13131899] mb-16 max-w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam ducimus labore nulla ad explicabo
+      dolores?</p>
+    <div class="progress-radial-container flex flex-col lg:flex-row justify-between gap-16 lg:gap-8 lg:px-5">
+      <div class="text-center progress-stats flex flex-col justify-center items-center">
+        <div class="radial-progress text-primary scale-[1.7] text-[#FF4240] text-base font-extrabold" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+        <h4 class="mt-11 mb-4 text-xl font-medium">Prayer Facility</h4>
+        <p class="lg:font-normal lg:text-base text-[#13131899]">Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Consequatur, nemo.</p>
+      </div>
+      <div class="text-center progress-stats flex flex-col justify-center items-center">
+        <div class="radial-progress text-primary scale-[1.7] text-[#49D293] text-base font-extrabold" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+        <h4 class="mt-11 mb-4 text-xl font-medium">Experienced Coach</h4>
+        <p class="lg:font-normal lg:text-base text-[#13131899]">Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Consequatur, nemo.</p>
+      </div>
+      <div class="text-center progress-stats flex flex-col justify-center items-center">
+        <div class="radial-progress text-primary scale-[1.7] text-[#FFB546] text-base font-extrabold" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+        <h4 class="mt-11 mb-4 text-xl font-medium">Senior Player</h4>
+        <p class="lg:font-normal lg:text-base text-[#13131899]">Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Consequatur, nemo.</p>
+      </div>
+      <div class="text-center progress-stats flex flex-col justify-center items-center">
+        <div class="radial-progress text-primary scale-[1.7] text-[#4C8DF1] text-base font-extrabold" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+        <h4 class="mt-11 mb-4 text-xl font-medium">Training Ground</h4>
+        <p class="lg:font-normal lg:text-base text-[#13131899]">Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Consequatur, nemo.</p>
+      </div>
+    </div>
+  </section>
 
 
 </body>
 
 </html>
 
-<!-- 
-<style>
+
+<!-- <style>
   body {
-    color: #ffffff99;
+    color: #13131899;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    background-color: #13131899;
   }
 </style> -->
