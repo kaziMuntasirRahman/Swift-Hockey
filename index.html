@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="style.css">
   <title>Swift Hockey</title>
   <style>
-    .font-manrope{
+    .font-manrope {
       font-family: 'Manrope', sans-serif;
     }
   </style>
 </head>
 
 <body class="pt-14 px-32 pb-24 font-manrope">
-  <header>
+  <header class="flex flex-col justify-center relative">
     <nav class="flex justify-between items-center">
       <h2 class="text-4xl text-[#131318] font-extrabold">Swift<span class="text-[#FF4240]">Hockey</span></h2>
       <div class="dropdown dropdown-end ml-auto">
@@ -37,9 +37,44 @@
       <img src="icons/search.png" class="ml-auto">
       <button class="btn btn-secondary bg-[#FF4240] ml-6 text-xl font-bold">Get Ticket</button>
     </nav>
+    <div class="carousel w-full mt-14 rounded-2xl">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="Images/image1.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-10 bottom-4">
+          <a href="#slide3" class="btn btn-circle bg-black text-white mr-2 border-none text-2xl font-medium">❮</a>
+          <a href="#slide2" class="btn btn-circle bg-black text-white border-none text-2xl font-medium">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="Images/image2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-10 bottom-4">
+          <a href="#slide1" class="btn btn-circle bg-black text-white mr-2 border-none text-2xl font-medium">❮</a>
+          <a href="#slide3" class="btn btn-circle bg-black text-white border-none text-2xl font-medium">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="Images/image3.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-10 bottom-4">
+          <a href="#slide2" class="btn btn-circle bg-black text-white mr-2 border-none text-2xl font-medium">❮</a>
+          <a href="#slide1" class="btn btn-circle bg-black text-white border-none text-2xl font-medium">❯</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#131318] text-white rounded-2xl p-8 flex flex-col gap-4 w-max absolute right-8 bottom-8">
+      <h1 class="text-2xl font-extrabold">Meet All the heroes from the field</h1>
+      <p class="font-medium max-w-[500px] text-[#ffffff99]">Discover the formidable players, skilled tacticians, and passionate athletes
+        who redefine excellence on the hockey field. Unleash the hockey spirit!</p>
+    </div>
   </header>
 
 
 </body>
 
 </html>
+
+<!-- 
+<style>
+  body {
+    color: #ffffff99;
+  }
+</style> -->
