@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="Images/hockey-icon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Images/hockey-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
   <title>Swift Hockey</title>
+  <style>
+    .font-manrope{
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <header></header>
 
-  
+<body class="pt-14 px-32 pb-24 font-manrope">
+  <header>
+    <nav class="flex justify-between items-center">
+      <h2 class="text-4xl text-[#131318] font-extrabold">Swift<span class="text-[#FF4240]">Hockey</span></h2>
+      <div class="dropdown dropdown-end ml-auto">
+        <div tabindex="0" role="button" class="sm:btn sm:m-1 lg:hidden">Click</div>
+        <ul tabindex="0"
+          class="sm:dropdown-content sm:z-[1] sm:menu sm:p-2 sm:bg-base-100 sm:rounded-box lg:flex lg:gap-11 text-[#424247]">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <img src="icons/search.png" class="ml-auto">
+      <button class="btn btn-secondary bg-[#FF4240] ml-6 text-xl font-bold">Get Ticket</button>
+    </nav>
+  </header>
+
+
 </body>
+
 </html>
