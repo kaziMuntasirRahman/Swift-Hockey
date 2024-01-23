@@ -24,14 +24,18 @@
 <body
   class="pt-3 px-5 pb-4 lg:pt-14 lg:px-32 lg:pb-24 font-manrope flex flex-col justify-between gap-16 lg:gap-24 text-[#131318]">
   <header class="flex flex-col justify-center gap-6 lg:gap-16 relative">
-    
+
     <nav class="navbar flex justify-between p-0">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247]">
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247]">
             <li><a class="font-bold text-[#FF4240]">Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
@@ -39,7 +43,8 @@
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <h2 class="text-xl lg:text-4xl font-bold lg:font-extrabold cursor-pointer mx-auto lg:m-0"><a href="#"></a>Swift<span class="text-[#FF4240]">Hockey</span></a></h2>
+        <h2 class="text-xl lg:text-4xl font-bold lg:font-extrabold cursor-pointer mx-auto lg:m-0"><a
+            href="#"></a>Swift<span class="text-[#FF4240]">Hockey</span></a></h2>
       </div>
       <div class="navbar-center hidden  lg:flex">
         <ul class="menu menu-horizontal px-1 p-2 sm:bg-base-100 sm:rounded-box lg:flex lg:gap-11 text-[#424247]">
@@ -52,7 +57,8 @@
       </div>
       <div class="navbar-end">
         <img src="icons/search.png" class="mr-6 hidden lg:block">
-        <button class="btn btn-secondary bg-[#FF4240] ml-6 text-lg lg:text-xl font-bold px-4 lg:px-6">Get Ticket</button>
+        <button class="btn btn-secondary bg-[#FF4240] ml-6 text-lg lg:text-xl font-bold px-4 lg:px-6">Get
+          Ticket</button>
       </div>
     </nav>
 
@@ -172,25 +178,27 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
     </div>
   </section>
+
+
+
   <section class="new-products">
     <h2 class="text-center text-4xl font-extrabold">Our New Products</h2>
     <p class="text-center text-[#13131899] mt-6 mb-12 lg:mb-20 w-full lg:max-w-[600px] font-medium mx-auto">Lorem ipsum
       dolor
       sit amet consectetur adipisicing elit. Non minima rerum, fuga ullam voluptatum consequuntur
       accusamus accusantium corporis labore eveniet.</p>
+
     <div class="products-cart-container grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
-        <img src="Images/5.png" class="w-full lg:w-auto h-[172px]">
-        <div class="product-info flex flex-col gap-3">
+
+      <div
+        class="product-info-container flex flex-col lg:flex-row items-start lg:items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="images/5.png" class="hidden lg:block">
+        <img src="images/5.1.png" class="block lg:hidden w-full">
+
+        <div class="product-info flex flex-col gap-3 items-start justify-start">
           <div class="product-stat">
             <div class="rating flex items-center">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
@@ -204,11 +212,15 @@
             </div>
           </div>
           <h1 class="text-xl font-extrabold">World Cup Flags Hockey</h1>
-          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="price-container flex items-center gap-4 mt-1">
-            <h3 class="text-[#FF4240] text-lg font-extrabold mr-2">Price - $22.00</h3>
-            <img src="icons/cart-location.png" class="w-6">
-            <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+          <div class="price-container flex items-start lg:gap-4 flex-col lg:flex-row mt-1">
+            <h3 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h3>
+            <br class="block lg:hidden">
+            <div class="delivery-fee flex gap-2">
+              <img src="icons/cart-location.png" class="w-6">
+              <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+            </div>
           </div>
         </div>
       </div>
@@ -216,9 +228,12 @@
 
 
 
-      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 py-6 border border-[#1313181a]">
-        <img src="Images/6.png" class="w-full lg:w-auto">
-        <div class="product-info flex flex-col gap-3">
+      <div
+        class="product-info-container flex flex-col lg:flex-row items-start lg:items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="images/6.png" class="hidden lg:block">
+        <img src="images/6.1.png" class="block lg:hidden w-full">
+
+        <div class="product-info flex flex-col gap-3 items-start justify-start">
           <div class="product-stat">
             <div class="rating flex items-center">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
@@ -232,21 +247,24 @@
             </div>
           </div>
           <h1 class="text-xl font-extrabold">World Cup Flags Hockey</h1>
-          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="price-container flex items-center gap-4 mt-1">
-            <h3 class="text-[#FF4240] text-lg font-extrabold mr-2">Price - $22.00</h3>
-            <img src="icons/cart-location.png" class="w-6">
-            <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+          <div class="price-container flex items-start lg:gap-4 flex-col lg:flex-row mt-1">
+            <h3 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h3>
+            <br class="block lg:hidden">
+            <div class="delivery-fee flex gap-2">
+              <img src="icons/cart-location.png" class="w-6">
+              <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+            </div>
           </div>
         </div>
       </div>
+      <div
+        class="product-info-container flex flex-col lg:flex-row items-start lg:items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="images/7.png" class="hidden lg:block">
+        <img src="images/7.1.png" class="block lg:hidden w-full">
 
-
-
-
-      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
-        <img src="Images/7.png">
-        <div class="product-info flex flex-col gap-3">
+        <div class="product-info flex flex-col gap-3 items-start justify-start">
           <div class="product-stat">
             <div class="rating flex items-center">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
@@ -260,17 +278,24 @@
             </div>
           </div>
           <h1 class="text-xl font-extrabold">World Cup Flags Hockey</h1>
-          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="price-container flex items-center gap-4 mt-1">
-            <h3 class="text-[#FF4240] text-lg font-extrabold mr-2">Price - $22.00</h3>
-            <img src="icons/cart-location.png" class="w-6">
-            <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+          <div class="price-container flex items-start lg:gap-4 flex-col lg:flex-row mt-1">
+            <h3 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h3>
+            <br class="block lg:hidden">
+            <div class="delivery-fee flex gap-2">
+              <img src="icons/cart-location.png" class="w-6">
+              <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
-        <img src="Images/8.png">
-        <div class="product-info flex flex-col gap-3">
+      <div
+        class="product-info-container flex flex-col lg:flex-row items-start lg:items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="images/8.png" class="hidden lg:block">
+        <img src="images/8.1.png" class="block lg:hidden w-full">
+
+        <div class="product-info flex flex-col gap-3 items-start justify-start">
           <div class="product-stat">
             <div class="rating flex items-center">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
@@ -284,17 +309,24 @@
             </div>
           </div>
           <h1 class="text-xl font-extrabold">World Cup Flags Hockey</h1>
-          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="price-container flex items-center gap-4 mt-1">
-            <h3 class="text-[#FF4240] text-lg font-extrabold mr-2">Price - $22.00</h3>
-            <img src="icons/cart-location.png" class="w-6">
-            <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+          <div class="price-container flex items-start lg:gap-4 flex-col lg:flex-row mt-1">
+            <h3 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h3>
+            <br class="block lg:hidden">
+            <div class="delivery-fee flex gap-2">
+              <img src="icons/cart-location.png" class="w-6">
+              <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
-        <img src="Images/9.png">
-        <div class="product-info flex flex-col gap-3">
+      <div
+        class="product-info-container flex flex-col lg:flex-row items-start lg:items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="images/9.png" class="hidden lg:block">
+        <img src="images/9.1.png" class="block lg:hidden w-full">
+
+        <div class="product-info flex flex-col gap-3 items-start justify-start">
           <div class="product-stat">
             <div class="rating flex items-center">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
@@ -308,17 +340,24 @@
             </div>
           </div>
           <h1 class="text-xl font-extrabold">World Cup Flags Hockey</h1>
-          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="price-container flex items-center gap-4 mt-1">
-            <h3 class="text-[#FF4240] text-lg font-extrabold mr-2">Price - $22.00</h3>
-            <img src="icons/cart-location.png" class="w-6">
-            <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+          <div class="price-container flex items-start lg:gap-4 flex-col lg:flex-row mt-1">
+            <h3 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h3>
+            <br class="block lg:hidden">
+            <div class="delivery-fee flex gap-2">
+              <img src="icons/cart-location.png" class="w-6">
+              <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
-        <img src="Images/10.png">
-        <div class="product-info flex flex-col gap-3">
+      <div
+        class="product-info-container flex flex-col lg:flex-row items-start lg:items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="images/10.png" class="hidden lg:block">
+        <img src="images/10.1.png" class="block lg:hidden w-full">
+
+        <div class="product-info flex flex-col gap-3 items-start justify-start">
           <div class="product-stat">
             <div class="rating flex items-center">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
@@ -332,11 +371,15 @@
             </div>
           </div>
           <h1 class="text-xl font-extrabold">World Cup Flags Hockey</h1>
-          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="price-container flex items-center gap-4 mt-1">
-            <h3 class="text-[#FF4240] text-lg font-extrabold mr-2">Price - $22.00</h3>
-            <img src="icons/cart-location.png" class="w-6">
-            <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+          <p class="text-[#13131899] lg:text-base font-medium max-w-80">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+          <div class="price-container flex items-start lg:gap-4 flex-col lg:flex-row mt-1">
+            <h3 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h3>
+            <br class="block lg:hidden">
+            <div class="delivery-fee flex gap-2">
+              <img src="icons/cart-location.png" class="w-6">
+              <p class="text-[#13131899] lg:text-base font-medium">Delivery Fee: Free</p>
+            </div>
           </div>
         </div>
       </div>
@@ -345,6 +388,7 @@
     </div>
   </section>
 
+  
 
 </body>
 
@@ -365,9 +409,13 @@
     background: rgba(19, 19, 24, 0.50);
     background-color: #1313181a;
     background-color: rgba(19, 19, 24, 0.60);
-    background-color: #13131899;
-
-
-  
+    background-color: #13131899;  
   }
+
+  @media screen and (min-width: 1024px) {
+  div{
+    content: url('images/4.1.png');
+  }    
+}
+
 </style> -->
