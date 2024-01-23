@@ -23,24 +23,40 @@
 
 <body
   class="pt-3 px-5 pb-4 lg:pt-14 lg:px-32 lg:pb-24 font-manrope flex flex-col justify-between gap-16 lg:gap-24 text-[#131318]">
-  <header class="flex flex-col justify-center gap-4 relative">
-    <!-- <nav class="flex justify-between items-center">
-      <h2 class="text-4xl font-extrabold">Swift<span class="text-[#FF4240]">Hockey</span></h2>
-      <div class="dropdown dropdown-end ml-auto">
-        <div tabindex="0" role="button" class="sm:btn sm:m-1 lg:hidden">Click</div>
-        <ul tabindex="0"
-          class="sm:dropdown-content sm:z-[1] sm:menu sm:p-2 sm:bg-base-100 sm:rounded-box lg:flex lg:gap-11 text-[#424247]">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Pages</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
+  <header class="flex flex-col justify-center gap-6 lg:gap-16 relative">
+    
+    <nav class="navbar flex justify-between p-0">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-50 rounded-box w-max p-2 sm:bg-base-50 sm:rounded-box lg:flex lg:gap-11 text-[#424247]">
+            <li><a class="font-bold text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <h2 class="text-xl lg:text-4xl font-bold lg:font-extrabold cursor-pointer mx-auto lg:m-0"><a href="#"></a>Swift<span class="text-[#FF4240]">Hockey</span></a></h2>
+      </div>
+      <div class="navbar-center hidden  lg:flex">
+        <ul class="menu menu-horizontal px-1 p-2 sm:bg-base-100 sm:rounded-box lg:flex lg:gap-11 text-[#424247]">
+          <li><a class="text-base font-bold text-[#FF4240]">Home</a></li>
+          <li><a class="text-base">About</a></li>
+          <li><a class="text-base">Pages</a></li>
+          <li><a class="text-base">Blog</a></li>
+          <li><a class="text-base">Contact</a></li>
         </ul>
       </div>
-      <img src="icons/search.png" class="ml-auto">
-      <button class="btn btn-secondary bg-[#FF4240] ml-6 text-xl font-bold">Get Ticket</button>
-    </nav> -->
-    <div class="carousel w-full lg:mt-14 rounded-2xl">
+      <div class="navbar-end">
+        <img src="icons/search.png" class="mr-6 hidden lg:block">
+        <button class="btn btn-secondary bg-[#FF4240] ml-6 text-lg lg:text-xl font-bold px-4 lg:px-6">Get Ticket</button>
+      </div>
+    </nav>
+
+    <div class="carousel w-full rounded-2xl">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="Images/image1.jpg" class="w-full" />
         <div
@@ -118,8 +134,7 @@
       sit amet consectetur adipisicing elit. Non minima rerum, fuga ullam voluptatum consequuntur
       accusamus accusantium corporis labore eveniet.</p>
     <div class="program-grid-container grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-      <div class="card w-full image-full">
+      <div class="card w-full image-full ">
         <figure><img src="Images/2.png" class="w-full" /></figure>
         <div class="card-body flex justify-center flex-col items-start p-6 pl-8 lg:px-10 lg:pt-24 lg:pb-10">
           <h2 class="card-title text-xl lg:text-3xl font-extrabold">Junior Program</h2>
@@ -173,8 +188,8 @@
       accusamus accusantium corporis labore eveniet.</p>
     <div class="products-cart-container grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-      <div class="product-info-container flex items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
-        <img src="Images/5.png">
+      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl px-6 py-6 border border-[#1313181a]">
+        <img src="Images/5.png" class="w-full lg:w-auto h-[172px]">
         <div class="product-info flex flex-col gap-3">
           <div class="product-stat">
             <div class="rating flex items-center">
@@ -201,8 +216,8 @@
 
 
 
-      <div class="product-info-container flex items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
-        <img src="Images/6.png">
+      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 py-6 border border-[#1313181a]">
+        <img src="Images/6.png" class="w-full lg:w-auto">
         <div class="product-info flex flex-col gap-3">
           <div class="product-stat">
             <div class="rating flex items-center">
@@ -225,7 +240,11 @@
           </div>
         </div>
       </div>
-      <div class="product-info-container flex items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
+
+
+
+
+      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
         <img src="Images/7.png">
         <div class="product-info flex flex-col gap-3">
           <div class="product-stat">
@@ -249,7 +268,7 @@
           </div>
         </div>
       </div>
-      <div class="product-info-container flex items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
+      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
         <img src="Images/8.png">
         <div class="product-info flex flex-col gap-3">
           <div class="product-stat">
@@ -273,7 +292,7 @@
           </div>
         </div>
       </div>
-      <div class="product-info-container flex items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
+      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
         <img src="Images/9.png">
         <div class="product-info flex flex-col gap-3">
           <div class="product-stat">
@@ -297,7 +316,7 @@
           </div>
         </div>
       </div>
-      <div class="product-info-container flex items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
+      <div class="product-info-container flex flex-col lg:flex-row items-center gap-5 bg-slate-50 rounded-2xl lg:px-6 lg:py-6 border border-[#1313181a]">
         <img src="Images/10.png">
         <div class="product-info flex flex-col gap-3">
           <div class="product-stat">
