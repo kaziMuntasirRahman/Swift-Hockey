@@ -21,8 +21,8 @@
   </style>
 </head>
 
-<body class="font-manrope flex flex-col justify-between gap-16 lg:gap-24 text-[#131318]">
-  <header class="flex flex-col justify-center gap-6 lg:gap-16 relative pt-3 px-5 lg:pt-14 lg:px-32">
+<body class="font-manrope text-[#131318]">
+  <header class="flex flex-col justify-center gap-6 lg:gap-16 pt-3 px-5 lg:pt-14 lg:px-32 lg:mb-24 border-2">
 
     <nav class="navbar flex justify-between p-0">
       <div class="navbar-start">
@@ -62,42 +62,48 @@
       </div>
     </nav>
 
-    <div class="carousel w-full rounded-2xl">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="images/image1.jpg" class="w-full" />
-        <div
-          class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
-          <a href="#slide3" class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
-          <a href="#slide2" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
+    <div class="carousel flex flex-col lg:relative gap-4">
+      <div class="carousel w-full rounded-2xl">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/image1.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
+            <a href="#slide3"
+              class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/image2.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
+            <a href="#slide1"
+              class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/image3.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
+            <a href="#slide2"
+              class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
+          </div>
         </div>
       </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <img src="images/image2.png" class="w-full" />
-        <div
-          class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
-          <a href="#slide1" class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
-          <a href="#slide3" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
-        </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <img src="images/image3.jpg" class="w-full" />
-        <div
-          class="absolute flex justify-between transform -translate-x-1/2 left-1/2 lg:-translate-x-0 lg:left-12 bottom-4 lg:bottom-8">
-          <a href="#slide2" class="btn btn-circle bg-black text-white mr-2 border-none lg:text-2xl lg:font-medium">❮</a>
-          <a href="#slide1" class="btn btn-circle bg-black text-white border-none lg:text-2xl lg:font-medium">❯</a>
-        </div>
+      <div
+        class="bg-[#131318] text-white rounded-2xl lg:p-8 p-4 flex flex-col gap-4 lg:w-max lg:absolute lg:right-8 lg:bottom-8">
+        <h1 class="text-lg lg:text-2xl font-extrabold">Meet All the heroes from the field</h1>
+        <p class="text-sm lg:text-base font-medium lg:max-w-[500px] text-[#ffffff99]">Discover the formidable players,
+          skilled tacticians, and passionate athletes who redefine excellence on the hockey field. Unleash the hockey
+          spirit!</p>
       </div>
     </div>
-    <div
-      class="bg-[#131318] text-white rounded-2xl lg:p-8 p-4 flex flex-col gap-4 lg:w-max lg:absolute lg:right-8 lg:bottom-8">
-      <h1 class="text-lg lg:text-2xl font-extrabold">Meet All the heroes from the field</h1>
-      <p class="text-sm lg:text-base font-medium lg:max-w-[500px] text-[#ffffff99]">Discover the formidable players,
-        skilled tacticians, and passionate athletes who redefine excellence on the hockey field. Unleash the hockey
-        spirit!</p>
-    </div>
+
   </header>
 
-  <main class="px-5 pb-4 lg:px-32 lg:pb-24">
+  <main class="flex flex-col justify-between gap-16 lg:gap-24 px-5 pb-4 lg:px-32 lg:pb-24 mt-16 mb-10">
     <section class="progress-container flex flex-col items-center gap-7">
       <h2 class="text-center text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
       <p class="text-center text-sm lg:text-base text-[#13131899] mb-16 max-w-[600px]">Lorem ipsum dolor sit amet
@@ -576,10 +582,12 @@
     </section>
   </main>
 
-  <footer class="flex flex-col lg:flex-row gap-10 lg:gap-40 items-center lg:justify-around w-full bg-neutral-900 px-9 py-10 lg:px-[100px] lg:py-[135px]">
+  <footer
+    class="flex flex-col lg:flex-row gap-10 lg:gap-40 items-center lg:justify-around w-full bg-neutral-900 px-9 py-10 lg:px-[100px] lg:py-[135px]">
     <section class="contact flex flex-col gap-4 items-center lg:items-start">
       <h1 class="text-white text-center lg:text-left text-2xl lg:text-[28px] font-extrabold">Get In Touch</h1>
-      <p class="mb-2 w-[346px] text-center lg:text-left text-white text-opacity-60 text-base font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, vitae magni in minus delectus
+      <p class="mb-2 w-[346px] text-center lg:text-left text-white text-opacity-60 text-base font-medium">Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Dolore, vitae magni in minus delectus
         inventore.</p>
       <div class="mail flex gap-4 items-center text-center lg:text-left">
         <img src="icons/footer-mail.png" alt="">
@@ -590,7 +598,8 @@
         <p class="text-white text-opacity-80 text-base font-medium">(+62) 123-321-543</p>
       </div>
     </section>
-    <section class="support-n-services grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-40 text-center lg:text-left justify-between lg:justify-normal">
+    <section
+      class="support-n-services grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-40 text-center lg:text-left justify-between lg:justify-normal">
       <div class="company flex flex-col gap-7">
         <h2 class="text-white text-lg font-bold">Company</h2>
         <ul class="text-white text-opacity-60 text-base font-medium flex flex-col gap-4 justify-around">
